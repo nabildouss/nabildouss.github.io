@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Badge } from '@/components/ui/badge'
 import { siteConfig } from '@/config/site'
+import React from 'react'
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
                 <div className="grid lg:grid-cols-3 text-center lg:mb-0 lg:text-left justify-between">
                 {
                   projects.map((project) => (
+                    <React.Fragment key={project.title}>
                     <a
                     href={project.href}
                     className="mb-3 mx-3 lg:mb-0 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -64,6 +66,7 @@ export default function Home() {
                       ))}
                     </div>
                   </a>
+                  </React.Fragment>
                 ))}
                 </div>
             </div>
@@ -79,6 +82,7 @@ export default function Home() {
                 <div className="mb-32 grid text-center lg:mb-0 lg:grid-flow-col-dense lg:text-left justify-between">
                 {
                   publications.map((pub) => (
+                    <React.Fragment key={pub.title}>
                     <a
                     href={pub.href}
                     className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -95,6 +99,7 @@ export default function Home() {
                     {pub.description}
                     </p>
                   </a>
+                  </React.Fragment>
                 ))}
                 </div>
             </div>
