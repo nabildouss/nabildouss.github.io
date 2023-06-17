@@ -13,7 +13,7 @@ export default function Home() {
         
         <div className='lg:flex lg:justify-between'>
           <div className="self-center lg:w-2/3">
-            <h2 className='text-3xl font-semibold mb-8'>Introduction</h2>
+            <h2 className='text-2xl font-semibold mb-8'>Introduction</h2>
             <p>Hi! &#128075;<br/>
                 My name is Nabil, and I am a data science graduate from the Technical University of Berlin (TU
                 Berlin).<br/>
@@ -24,19 +24,19 @@ export default function Home() {
                     <Link href="/Resume" target="_blank" rel="noopener noreferrer">Learn More</Link>
                   </Button>
                   <Button className='mr-2' asChild>
-                    <Link href={siteConfig.links.email}>Contact Me</Link>
+                    <a href={siteConfig.links.email}>Contact Me</a>
                   </Button>
             </div>
           </div>
           <span className='flex mt-2 justify-center'><Image className="rounded-full border lg:mr-5 "alt="My Photo" width={250} height={250} src="/lebenslauf.jpg"/></span>
         </div>
       </section>
-      <hr className='mt-20'/>
+      <hr className='mt-10'/>
       <section className="mt-10" id="projects">
         <div>
             <div>
                 <header>
-                    <h2 className='text-3xl font-semibold mb-10'>Projects</h2>
+                    <h2 className='text-2xl font-semibold mb-10'>Projects</h2>
                 </header>
                 <div className="grid lg:grid-cols-3 text-center lg:mb-0 lg:text-left justify-between">
                 {
@@ -72,12 +72,12 @@ export default function Home() {
             </div>
         </div>
       </section>
-      <hr className='mt-20'/>
+      <hr className='mt-10'/>
       <section className="mt-10" id="publications">
         <div>
             <div>
                 <header>
-                    <h2 className='text-3xl font-semibold mb-10'>Publications</h2>
+                    <h2 className='text-2xl font-semibold mb-10'>Publications</h2>
                 </header>
                 <div className="mb-32 grid text-center lg:mb-0 lg:grid-flow-col-dense lg:text-left justify-between">
                 {

@@ -6,7 +6,7 @@ export function AppShell({
     children: React.ReactNode
   }) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-40">
+    <main className="flex min-h-screen flex-col items-center justify-between p-20">
       <div className="relative mb-10 text-center">
         <div className="grid text-5xl place-items-center font-semibold mb-4">
         Nabil Douss</div>
