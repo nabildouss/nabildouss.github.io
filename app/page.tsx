@@ -1,113 +1,157 @@
+import { Icon, Icons } from '@/components/icons'
 import Image from 'next/image'
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import { Badge } from '@/components/ui/badge'
+import { siteConfig } from '@/config/site'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <section className="mt-10" id="intro">
+        
+        <div className='lg:flex lg:justify-between'>
+          <div className="self-center lg:w-2/3">
+            <h2 className='text-3xl font-semibold mb-8'>Introduction</h2>
+            <p>Hi! &#128075;<br/>
+                My name is Nabil, and I am a data science graduate from the Technical University of Berlin (TU
+                Berlin).<br/>
+                Currently I am a full stack developer at Ernst & Young.
+            </p>
+            <div className="actions mt-3 flex justify-center lg:justify-start">
+                  <Button className='mr-2' asChild>
+                    <Link href="/Resume" target="_blank" rel="noopener noreferrer">Learn More</Link>
+                  </Button>
+                  <Button className='mr-2' asChild>
+                    <Link href={siteConfig.links.email}>Contact Me</Link>
+                  </Button>
+            </div>
+          </div>
+          <span className='flex mt-2 justify-center'><Image className="rounded-full border lg:mr-5 "alt="My Photo" width={250} height={250} src="/lebenslauf.jpg"/></span>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </section>
+      <hr className='mt-20'/>
+      <section className="mt-10" id="projects">
+        <div>
+            <div>
+                <header>
+                    <h2 className='text-3xl font-semibold mb-10'>Projects</h2>
+                </header>
+                <div className="grid lg:grid-cols-3 text-center lg:mb-0 lg:text-left justify-between">
+                {
+                  projects.map((project) => (
+                    <a
+                    href={project.href}
+                    className="mb-3 mx-3 lg:mb-0 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h2 className={`mb-3 flex text-xl font-semibold`}>
+                      <project.icon className='h-5 m-1 mr-3' />
+                      <div>
+                        {project.title}{' '}
+                        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                          -&gt;
+                        </span>
+                      </div>                      
+                    </h2>
+                    <p className={`m-0 max-w-fit text-sm opacity-50`}>
+                    {project.description}
+                    </p>
+                    <div>
+                      {project.tags.map((tag) => (
+                        <Badge className="mt-2 mr-1" variant="outline">{tag}</Badge>
+                      ))}
+                    </div>
+                  </a>
+                ))}
+                </div>
+            </div>
+        </div>
+      </section>
+      <hr className='mt-20'/>
+      <section className="mt-10" id="publications">
+        <div>
+            <div>
+                <header>
+                    <h2 className='text-3xl font-semibold mb-10'>Publications</h2>
+                </header>
+                <div className="mb-32 grid text-center lg:mb-0 lg:grid-flow-col-dense lg:text-left justify-between">
+                {
+                  publications.map((pub) => (
+                    <a
+                    href={pub.href}
+                    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h2 className={`mb-3 text-xl font-semibold`}>
+                      {pub.title}{' '}
+                      <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                        -&gt;
+                      </span>                      
+                    </h2>
+                    <p className={`m-0 max-w-fit text-sm opacity-50`}>
+                    {pub.description}
+                    </p>
+                  </a>
+                ))}
+                </div>
+            </div>
+        </div>
+      </section>
+    </div>
   )
 }
+
+const projects: { title: string; href: string; description: string; icon: Icon, tags: Array<string>}[] = [
+  {
+    title: "Digital Tax Intelligence",
+    href: "https://ey-solution-store.de/de_de/assets/ey-digital-tax-intelligence",
+    description:
+      "A web application based on Vue and MongoDB for analysing SAP transactional data, optimizing VAT tax decisions and verifying SAP data quality.",
+    icon: Icons.ey,
+    tags: ['VueJS', 'GraphQL', 'TypeScript', 'MongoDB'],
+  },
+  {
+    title: "Tax Engine API",
+    href: "https://ey-solution-store.de/de_de/assets/ey-digital-tax-intelligence",
+    description:
+      "An API for VAT tax determination using SAP transactional data. A component of Digital Tax Intelligence.",
+    icon: Icons.ey,
+    tags: ['C#', 'SQL Server', 'API', 'MongoDB'],
+  },
+  {
+    title: "OCR on historical documents",
+    href: "https://github.com/nabildouss/ocr-project",
+    description:
+      "Implemented and evaluated models for Optical Character Recognition on historical documents consisting of the 'GT4HistOCR' (Springmann et al. 2018) dataset.",
+    icon: Icons.search,
+    tags: ['Python', 'PyTorch', 'OCR', 'Machine Learning'],
+  },
+  {
+    title: "Multi-domain Sentiment Analysis",
+    href: "/MasterThesis",
+    description:
+      "Designed, implemented and evaluated three different model architectures for binary sentiment analysis on textual data. The models aimed to solve the multi-domain sentiment analysis task.",
+    icon: Icons.sentiment,
+    tags: ['Python', 'TensorFlow', 'FastText', 'Deep Learning'],
+  },
+  {
+    title: "TunQuiz",
+    href: "https://github.com/nabildouss/TunQuiz",
+    description:
+      "Implemented an android application consisting of a short quiz about my beloved home, Tunisia.",
+    icon: Icons.dices,
+    tags: ['Java', 'Android', 'XML'],
+  },
+]
+
+const publications: { title: string; href: string; description: string;}[] = [
+  {
+    title: "REFORMIST: Hierarchical Attention Networks for Multi-Domain Sentiment Classification with Active Learning",
+    href: "https://dl.acm.org/doi/10.1145/3555776.3577689",
+    description:
+      "SAC '23: Proceedings of the 38th ACM/SIGAPP Symposium on Applied Computing March 2023 Pages 919\–928",
+  },
+]
