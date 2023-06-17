@@ -28,7 +28,7 @@ export default function Home() {
                   </Button>
             </div>
           </div>
-          <span className='flex mt-2 justify-center'><Image className="rounded-full border lg:mr-5 "alt="My Photo" width={250} height={250} src="/lebenslauf.jpg"/></span>
+          <span className='flex mt-2 justify-center lg:mr-5'><img className="rounded-full border"alt="My Photo" width="300" height="300" src="/lebenslauf.jpg"/></span>
         </div>
       </section>
       <hr className='mt-10'/>

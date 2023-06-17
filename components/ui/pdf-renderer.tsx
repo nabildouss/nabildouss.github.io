@@ -8,7 +8,7 @@ export default function PdfRenderer({
   }) {
   return (
     <div>
-      <h2 className='text-3xl text-center font-semibold mb-8'>{pdfTitle}</h2>
+      <h2 className='text-2xl text-center font-semibold mb-8'>{pdfTitle}</h2>
       <iframe className="min-w-full h-screen" src={pdfFile} />
     </div>
   )
