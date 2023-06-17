@@ -62,7 +62,7 @@ export default function Home() {
                     </p>
                     <div>
                       {project.tags.map((tag) => (
-                        <Badge className="mt-2 mr-1" variant="outline">{tag}</Badge>
+                        <Badge key={tag} className="mt-2 mr-1" variant="outline">{tag}</Badge>
                       ))}
                     </div>
                   </a>
