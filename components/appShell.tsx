@@ -14,8 +14,10 @@ export function AppShell({
           Welcome to my personal website!
         </p>
       </div>
-      <div className='mt-5 px-5 py-2 mb-10 text-center min-w-full lg:mb-0 lg:grid-cols-4 lg:text-left border rounded lg:pb-10' >
-      <NavigationBar/>
+      <div className='mt-5 lg:px-5 py-2 mb-10 text-center min-w-full lg:mb-0 lg:grid-cols-4 lg:text-left lg:border lg:rounded lg:pb-10' >
+      <div className='hidden lg:flex'>
+        <NavigationBar/>
+      </div>
       {children}
       </div>
     </main>
