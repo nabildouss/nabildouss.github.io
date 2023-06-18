@@ -28,7 +28,7 @@ export default function Home() {
                   </Button>
             </div>
           </div>
-          <span className='flex mt-2 justify-center lg:mr-5'><img className="rounded-full border"alt="My Photo" width="300" height="300" src="/lebenslauf.jpg"/></span>
+          <span className='flex mt-2 justify-center lg:mr-5'><img className="rounded-full border w-28 lg:w-72 md:w-48"alt="My Photo" width="300" height="300" src="/lebenslauf.jpg"/></span>
         </div>
       </section>
       <hr className='mt-10'/>
@@ -41,10 +41,10 @@ export default function Home() {
                 <div className="grid lg:grid-cols-3 text-center lg:mb-0 lg:text-left justify-between">
                 {
                   projects.map((project) => (
-                    <React.Fragment key={project.title}>
                     <a
                     href={project.href}
-                    className="mb-3 mx-3 lg:mb-0 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                    key={project.title}
+                    className="mb-3 mx-3 lg:mb-0 group rounded-lg border md:border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -66,7 +66,6 @@ export default function Home() {
                       ))}
                     </div>
                   </a>
-                  </React.Fragment>
                 ))}
                 </div>
             </div>
@@ -85,7 +84,7 @@ export default function Home() {
                     <React.Fragment key={pub.title}>
                     <a
                     href={pub.href}
-                    className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                    className="group rounded-lg border md:border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
