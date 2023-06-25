@@ -18,27 +18,6 @@ export function NavigationBar() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-      <NavigationMenuItem>
-          <Link href="#intro" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Introduction
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="#projects" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Projects
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="#publications" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Publications
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href={siteConfig.links.linkedin} legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()} target="_blank" rel="noopener noreferrer">
