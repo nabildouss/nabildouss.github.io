@@ -27,10 +27,9 @@ import {
     X,
     Linkedin,
     Mail,
-    type LucideIcon,
   } from "lucide-react"
   
-  export type Icon = LucideIcon
+  export type Icon =  React.FC<LucideProps>;
   
   export const Icons = {
     logo: Command,
