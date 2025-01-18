@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Badge } from '@/components/ui/badge'
 import { siteConfig } from '@/config/site'
 import React from 'react'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -13,11 +14,11 @@ export default function Home() {
         <div className='lg:flex lg:justify-between'>
           <div className="self-center lg:w-2/3">
             <h2 className='text-2xl font-semibold mb-8'>Introduction</h2>
-            <p>Hi! &#128075;<br/>
+            <div>Hi! &#128075;<br/>
                 My name is Nabil, and I am a data science graduate from the Technical University of Berlin (TU
                 Berlin).<br/>
                 Currently I am a full stack developer at Ernst & Young.
-            </p>
+            </div>
             <div className="actions mt-3 flex justify-center lg:justify-start">
                   <Button className='mr-2' asChild>
                     <Link href="/Resume" target="_blank" rel="noopener noreferrer">Learn More</Link>
@@ -27,7 +28,7 @@ export default function Home() {
                   </Button>
             </div>
           </div>
-          <span className='flex mt-2 justify-center lg:mr-5'><img className="rounded-full border w-28 lg:w-72 md:w-48"alt="My Photo" width="300" height="300" src="/lebenslauf.jpg"/></span>
+          <span className='flex mt-2 justify-center lg:mr-5'><Image className="rounded-full border w-28 lg:w-72 md:w-48"alt="My Photo" width="300" height="300" src="/lebenslauf.jpg"/></span>
         </div>
       </section>
       <hr className='mt-10'/>
@@ -56,9 +57,9 @@ export default function Home() {
                         </span>
                       </div>                      
                     </h2>
-                    <p className={`m-0 max-w-fit text-sm opacity-50`}>
+                    <div className={`m-0 max-w-fit text-sm opacity-50`}>
                     {project.description}
-                    </p>
+                    </div>
                     <div>
                       {project.tags.map((tag) => (
                         <Badge key={tag} className="mt-2 mr-1" variant="outline">{tag}</Badge>
@@ -93,9 +94,9 @@ export default function Home() {
                         -&gt;
                       </span>                      
                     </h2>
-                    <p className={`m-0 max-w-fit text-sm opacity-50`}>
+                    <div className={`m-0 max-w-fit text-sm opacity-50`}>
                     {pub.description}
-                    </p>
+                    </div>
                   </a>
                   </React.Fragment>
                 ))}
