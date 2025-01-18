@@ -10,7 +10,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
     <footer className={cn(className)}>
       <div className="flex container justify-between gap-4 md:h-16 md:flex-row md:py-0">
         <div className="mt-1">
-          <p className="copyright">&copy; 2023 Nabil&nbsp;Douss </p>
+          <p className="copyright">&copy; {new Date().getFullYear()} Nabil&nbsp;Douss </p>
         </div>
         <div className="flex gap-4 mt-1">
         {
