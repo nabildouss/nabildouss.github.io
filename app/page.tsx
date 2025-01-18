@@ -16,7 +16,7 @@ export default function Home() {
             <h2 className='text-2xl font-semibold mb-8'>Introduction</h2>
             <div>Hi! &#128075;<br/>
                 My name is Nabil, and I am a full-stack developer at Ernst & Young.<br/>
-                I&apos;ve spent 5 years building cool stuff with various technologies such as Next.js, ASP.NET, and Python, while also unraveling the intricacies of business transactions through data analytics.
+                I&apos;ve spent {new Date().getFullYear() - 2019} years building cool stuff with various technologies such as Next.js, ASP.NET, and Python, while also unraveling the intricacies of business transactions through data analytics.
             </div>
             <div className="actions mt-3 flex justify-center lg:justify-start">
                   <Button className='mr-2' asChild>
