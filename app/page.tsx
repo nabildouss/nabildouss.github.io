@@ -110,7 +110,7 @@ export default function Home() {
 const projects: { title: string; href: string; description: string; icon: Icon, tags: Array<string>}[] = [
   {
     title: "Digital Tax Intelligence",
-    href: "https://ey-solution-store.de/de_de/assets/ey-digital-tax-intelligence",
+    href: "https://www.ey.com/de_de/services/solution-store/ey-digital-tax-intelligence",
     description:
       "A web application based on Vue and MongoDB for analysing SAP transactional data, optimizing VAT tax decisions and verifying SAP data quality.",
     icon: Icons.ey,
@@ -118,7 +118,7 @@ const projects: { title: string; href: string; description: string; icon: Icon, 
   },
   {
     title: "Tax Engine API",
-    href: "https://ey-solution-store.de/de_de/assets/ey-digital-tax-intelligence",
+    href: "https://www.ey.com/de_de/services/solution-store/ey-digital-tax-intelligence",
     description:
       "An API for VAT tax determination using SAP transactional data. A component of Digital Tax Intelligence.",
     icon: Icons.ey,
