@@ -11,8 +11,9 @@ export default function Home() {
     <div>
       <section className="mt-10" id="intro">
         
-        <div className='lg:flex lg:justify-between'>
-          <div className="self-center lg:w-2/3">
+        <div className='lg:flex-row-reverse lg:flex lg:justify-between'>
+          <span className='flex my-2 justify-center lg:mr-5'><Image className="rounded-full border w-28 lg:w-72 md:w-48"alt="My Photo" width="300" height="300" src="/lebenslauf.jpg"/></span>
+          <div className="self-center lg:pr-5 lg:w-2/3">
             <h2 className='text-2xl font-semibold mb-8'>Introduction</h2>
             <div>Hi! &#128075;<br/>
                 My name is Nabil, and I am a full-stack developer at Ernst & Young.<br/>
@@ -27,7 +28,6 @@ export default function Home() {
                   </Button>
             </div>
           </div>
-          <span className='flex mt-2 justify-center lg:mr-5'><Image className="rounded-full border w-28 lg:w-72 md:w-48"alt="My Photo" width="300" height="300" src="/lebenslauf.jpg"/></span>
         </div>
       </section>
       <hr className='mt-10'/>
