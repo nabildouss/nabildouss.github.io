@@ -9,7 +9,7 @@ export default function PdfRenderer({
   return (
     <div>
       <h2 className='text-2xl text-center font-semibold mb-8'>{pdfTitle}</h2>
-      <embed className="min-w-full h-screen" src={pdfFile} />
+      <iframe className="min-w-full h-screen" src={pdfFile} />
     </div>
   )
 }
