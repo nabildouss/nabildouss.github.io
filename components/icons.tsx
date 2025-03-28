@@ -27,6 +27,7 @@ import {
     X,
     Linkedin,
     Mail,
+    Home,
   } from "lucide-react"
   
   export type Icon =  React.FC<LucideProps>;
@@ -57,6 +58,7 @@ import {
     moon: Moon,
     laptop: Laptop,
     mail: Mail,
+    home: Home,
     gitHub: ({ ...props }: LucideProps) => (
       <svg
         aria-hidden="true"
