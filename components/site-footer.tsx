@@ -8,11 +8,11 @@ import { Icon, Icons } from "./icons"
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer className={cn(className)}>
-      <div className="flex container justify-between gap-4 md:h-16 md:flex-row md:py-0">
-        <div className="mt-1">
+      <div className="flex mt-1 container justify-between md:h-16 md:flex-row md:py-0">
+        <div>
           <div className="copyright">&copy; {new Date().getFullYear()} Nabil&nbsp;Douss </div>
         </div>
-        <div className="flex gap-4 mt-1">
+        <div className="flex gap-4">
         {
           links.map((link) => (
             <a

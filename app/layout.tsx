@@ -23,7 +23,6 @@ export default function RootLayout({
           <AppShell>
             {children}          
           </AppShell>          
-          <SiteFooter/>
         </ThemeProvider>
       </body>
     </html>

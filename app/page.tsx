@@ -21,7 +21,7 @@ export default function Home() {
             </div>
             <div className="actions mt-3 flex justify-center lg:justify-start">
                   <Button className='mr-2' asChild>
-                    <Link href="/Resume" target="_blank" rel="noopener noreferrer">Learn More</Link>
+                    <Link href="/Resume">Learn More</Link>
                   </Button>
                   <Button className='mr-2' asChild>
                     <a href={siteConfig.links.email}>Contact Me</a>
